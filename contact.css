@@ -1,0 +1,138 @@
+ .container {
+      max-width: 1000px;
+      margin: 50px auto;
+      display: flex;
+      flex-wrap: wrap;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    .container:hover {
+    box-shadow: 0 10px 20px rgba(243, 92, 195, 0.437);
+    transform: translateY(-5px );
+}
+
+
+    .contact-form, .contact-info {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .contact-form {
+      background-color: #ffffff;
+    }
+
+    .contact-form h2 {
+      margin-bottom: 30px;
+      color: #c2185b;
+      font-size: 28px;
+    }
+
+    .form-group {
+      position: relative;
+      margin-bottom: 25px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 12px 12px 0;
+      border: none;
+      border-bottom: 2px solid #ccc;
+      background: transparent;
+      font-size: 16px;
+      transition: border-color 0.3s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-bottom-color: #e91e63;
+    }
+
+    .form-group label {
+      position: absolute;
+      top: 12px;
+      left: 0;
+      color: #888;
+      font-size: 16px;
+      pointer-events: none;
+      transition: 0.3s ease all;
+    }
+
+    .form-group input:focus + label,
+    .form-group input:not(:placeholder-shown) + label,
+    .form-group textarea:focus + label,
+    .form-group textarea:not(:placeholder-shown) + label {
+      top: -10px;
+      font-size: 13px;
+      color: #e91e63;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .contact-form button {
+      background-color: #e91e63;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+      width: 100%;
+    }
+
+    .contact-form button:hover {
+      background-color: #d81b60;
+    }
+
+    .contact-info {
+      background-color: #ffe4ec;
+    }
+
+    .contact-info h2 {
+      font-size: 26px;
+      color: #c2185b;
+      margin-bottom: 30px;
+    }
+
+    .info-item {
+      margin-bottom: 20px;
+    }
+
+    .info-item label {
+      display: block;
+      font-weight: bold;
+      color: #e91e63;
+      margin-bottom: 5px;
+    }
+
+    .info-item span {
+      color: #333;
+      font-size: 16px;
+    }
+
+    .map {
+      max-width: 1000px;
+      margin: 30px auto;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    iframe {
+      width: 100%;
+      height: 350px;
+      border: none;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    }      
